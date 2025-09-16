@@ -5,5 +5,5 @@ WORKDIR /tmp/workdir-demo
 RUN pwd
 RUN echo "Hello I am in work dir" > hello.txt
 CMD ["sleep","1000"]
-
+# workdir
 # docker build -t workdir:v1 --no-cache -progress=plain .
