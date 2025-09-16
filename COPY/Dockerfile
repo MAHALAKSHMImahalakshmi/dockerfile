@@ -4,4 +4,5 @@ RUN rm -rf /usr/share/nginx/html/index.html
 # remove previous existed index.html
 COPY webAPP/ /usr/share/nginx/html/
 # copy <source> <destination>
+RUN chmod +r /usr/share/nginx/html/
 CMD ["nginx", "-g", "daemon off;"]
