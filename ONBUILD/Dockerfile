@@ -5,3 +5,4 @@ ONBUILD COPY index.html /usr/share/nginx/html/index.html
 CMD ["nginx", "-g","daemon off;"]
 # ONBUILD: Triggers instructions when a new image is built FROM this one, enabling reusable “parent” images
 #While devloping images you can put some conditions while others are using your images...
+# docker build -t onbuild:v1 --no-cache --progress=plain .

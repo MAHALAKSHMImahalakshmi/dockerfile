@@ -6,4 +6,4 @@ RUN useradd mahalakshmi
 USER mahalakshmi
 CMD ["google.com"]
 ENTRYPOINT ["ping"]
-#docker build -t user:v1 --no-cache -progress=plain .
+#docker build -t user:v1 --no-cache --progress=plain .
